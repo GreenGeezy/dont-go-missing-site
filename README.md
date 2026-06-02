@@ -30,7 +30,7 @@ Netlify is not configured yet.
 
 Hostinger DNS is not configured yet.
 
-Email forwarding for `support@dontgomissing.com` is not configured yet.
+The public support email is `dontgomissingapp@gmail.com`.
 
 ## Manual Netlify Steps
 
@@ -55,10 +55,9 @@ Email forwarding for `support@dontgomissing.com` is not configured yet.
 
 ## Manual Email Forwarding Steps
 
-1. Create or activate `support@dontgomissing.com` in Hostinger email or email forwarding.
-2. Forward messages to the desired inbox.
-3. Send a test message to `support@dontgomissing.com`.
-4. Keep `Agcomsol@gmail.com` available as the fallback email until the support address is confirmed working.
+1. Confirm `dontgomissingapp@gmail.com` is monitored for app support, data deletion requests, and feedback.
+2. Send a test message to `dontgomissingapp@gmail.com`.
+3. If a branded domain email is added later, update the website copy and mailto links before using it publicly.
 
 ## App Store Connect URLs
 
