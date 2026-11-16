@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hiking Time Calculator: How Long Will My Hike Take? (+ Turnaround Time)</title>
+  <meta name="description" content="Estimate how long a hike will take from distance and elevation gain using Naismith's rule, then get your turnaround time so you're back before dark. Free, works in miles or kilometres.">
+  <link rel="canonical" href="https://dontgomissing.com/tools/hiking-time-calculator/">
+  <meta name="apple-itunes-app" content="app-id=6768712827">
+  <meta property="og:site_name" content="Don't Go Missing">
+  <meta property="og:title" content="Hiking Time &amp; Turnaround Calculator">
+  <meta property="og:description" content="How long will your hike take, and when should you turn around? Free calculator based on Naismith's rule.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dontgomissing.com/tools/hiking-time-calculator/">
+  <meta property="og:image" content="https://dontgomissing.com/assets/og-preview.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#07110e">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/app-icon-180.png">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Hiking Time and Turnaround Calculator",
+        "url": "https://dontgomissing.com/tools/hiking-time-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "description": "A free calculator that estimates hiking time from distance, elevation gain, pace and terrain using Naismith's rule, and works out the latest time to turn around.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@type": "Organization", "name": "Don't Go Missing", "url": "https://dontgomissing.com/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dontgomissing.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Free tools", "item": "https://dontgomissing.com/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Hiking Time Calculator", "item": "https://dontgomissing.com/tools/hiking-time-calculator/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate hiking time?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The standard method is Naismith's rule: allow 1 hour for every 5 kilometres (about 3 miles) of distance, plus 1 hour for every 600 metres (about 2,000 feet) of elevation gain. Then add time for breaks, rough terrain and a heavy pack." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to hike 5 miles?",
+            "acceptedAnswer": { "@type": "Answer", "text": "On a flat, well-made trail at an average pace, 5 miles takes about 1 hour 40 minutes of walking. With 1,500 feet of elevation gain it takes about 2 hours 25 minutes, and closer to 3 hours once you include breaks." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a turnaround time?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A turnaround time is a clock time you set before the hike at which you head back, whether or not you have reached your goal. It is worked out backwards from the time you must be off the trail, minus the time the return leg takes, minus a safety buffer." }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is Naismith's rule?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Naismith's rule is a reasonable estimate for a fit adult on a good trail in fair conditions. It does not account for breaks, steep descents, snow, heat, altitude, off-trail travel or a slower member of the group, so treat it as a minimum and add a margin." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Don't Go Missing home">
+        <img src="/assets/app-icon-80.png" alt="" width="30" height="30">
+        <span>Don't Go Missing</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#how">How it works</a>
+        <a href="/tools/" aria-current="page">Free tools</a>
+        <a href="/guides/">Guides</a>
+        <a class="button button-primary button-small" href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <ol class="breadcrumbs">
+          <li><a href="/">Home</a></li>
+          <li><a href="/tools/">Free tools</a></li>
+          <li>Hiking Time Calculator</li>
+        </ol>
+        <p class="eyebrow">Free tool</p>
+        <h1>Hiking Time &amp; Turnaround Calculator</h1>
+        <p class="lead">Enter your distance and elevation gain to see how long the hike will take, and the latest time you should turn around to be out before dark.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" style="padding-top:0">
+      <div class="wrap tool-layout">
+        <form class="tool-panel" id="hike-form" novalidate>
+          <fieldset>
+            <legend>Your route</legend>
+            <div class="field">
+              <span class="label" id="units-label">Units</span>
+              <div class="segmented" role="radiogroup" aria-labelledby="units-label">
+                <label><input type="radio" name="units" value="imperial" checked><span>Miles &amp; feet</span></label>
+                <label><input type="radio" name="units" value="metric"><span>Kilometres &amp; metres</span></label>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="distance">Total distance <span class="hint">(<span id="distance-unit">miles</span>, round trip)</span></label>
+                <input id="distance" name="distance" type="number" inputmode="decimal" min="0" step="0.1" value="8">
+              </div>
+              <div class="field">
+                <label for="gain">Elevation gain <span class="hint">(<span id="gain-unit">feet</span>)</span></label>
+                <input id="gain" name="gain" type="number" inputmode="decimal" min="0" step="10" value="2000">
+              </div>
+            </div>
+            <div class="field">
+              <span class="label" id="route-label">Route type</span>
+              <div class="segmented" role="radiogroup" aria-labelledby="route-label">
+                <label><input type="radio" name="route" value="outback" checked><span>Out and back</span></label>
+                <label><input type="radio" name="route" value="loop"><span>Loop or one-way</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your pace</legend>
+            <div class="field">
+              <span class="label" id="pace-label">Walking pace on flat ground</span>
+              <div class="segmented" role="radiogroup" aria-labelledby="pace-label">
+                <label><input type="radio" name="pace" value="4"><span>Relaxed (2.5 mph)</span></label>
+                <label><input type="radio" name="pace" value="5" checked><span>Average (3 mph)</span></label>
+                <label><input type="radio" name="pace" value="6"><span>Fast (3.7 mph)</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="label" id="terrain-label">Terrain and load</span>
+              <div class="segmented" role="radiogroup" aria-labelledby="terrain-label">
+                <label><input type="radio" name="terrain" value="1" checked><span>Good trail</span></label>
+                <label><input type="radio" name="terrain" value="1.25"><span>Rough trail or heavy pack</span></label>
+                <label><input type="radio" name="terrain" value="1.5"><span>Off-trail or snow</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="label" id="breaks-label">Breaks</span>
+              <div class="segmented" role="radiogroup" aria-labelledby="breaks-label">
+                <label><input type="radio" name="breaks" value="0"><span>None</span></label>
+                <label><input type="radio" name="breaks" value="10" checked><span>10 min per hour</span></label>
+                <label><input type="radio" name="breaks" value="15"><span>15 min per hour</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset style="margin-bottom:0">
+            <legend>Your day</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="start">Start hiking at</label>
+                <input id="start" name="start" type="time" value="08:00">
+              </div>
+              <div class="field">
+                <label for="deadline">Must be back by <span class="hint">(aim for 30+ min before sunset)</span></label>
+                <input id="deadline" name="deadline" type="time" value="16:30">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="tool-panel sticky" aria-live="polite">
+          <div class="result-grid">
+            <div class="result big">
+              <small id="r-key-label">Turn around by</small>
+              <b id="r-key">--</b>
+              <p id="r-key-note"></p>
+            </div>
+            <div class="result">
+              <small>Total time</small>
+              <b id="r-total">--</b>
+              <p id="r-total-note"></p>
+            </div>
+            <div class="result">
+              <small>Estimated finish</small>
+              <b id="r-finish">--</b>
+              <p>Moving time: <span id="r-moving">--</span></p>
+            </div>
+          </div>
+          <p class="callout warn" id="r-warning" hidden style="margin:0.8rem 0 0;color:#ffc2b3;font-weight:700"></p>
+
+          <div class="tool-actions">
+            <a class="button button-primary span-2" id="plan-link" href="/tools/trip-plan/">Put these times in a trip plan &rarr;</a>
+          </div>
+          <p class="fine-print" style="margin-top:0.8rem">An estimate, not a guarantee. Weather, altitude, fitness and the slowest person in your group all change the answer.</p>
+
+          <div class="app-callout">
+            <img src="/assets/app-icon-180.png" alt="Don't Go Missing app icon" width="56" height="56">
+            <div>
+              <h3>Running late with no signal?</h3>
+              <p>Don't Go Missing alarms on your phone at your return time, even offline, and your contacts already know when to worry.</p>
+              <a class="button button-green button-small" href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">Get the iPhone app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="wrap">
+        <div class="prose">
+          <h2 style="margin-top:0">How do you calculate hiking time?</h2>
+          <div class="answer-box">
+            <p>The standard method is Naismith's rule: allow 1 hour for every 5 kilometres (about 3 miles) of distance, plus 1 hour for every 600 metres (about 2,000 feet) of elevation gain. Then add time for breaks, rough terrain and a heavy pack.</p>
+          </div>
+          <p>The rule was devised by Scottish mountaineer William Naismith in 1892 and is still the starting point for most route-planning. This calculator applies it, then adjusts for your pace, the terrain and how often you stop.</p>
+
+          <h2>How long does it take to hike 5 miles?</h2>
+          <p>On a flat, well-made trail at an average pace, 5 miles takes about 1 hour 40 minutes of walking. With 1,500 feet of elevation gain it takes about 2 hours 25 minutes, and closer to 3 hours once you include breaks.</p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr><th scope="col">Distance</th><th scope="col">Flat</th><th scope="col">With 1,000 ft gain</th><th scope="col">With 2,000 ft gain</th><th scope="col">With 3,000 ft gain</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">3 miles</th><td>1 h 00 min</td><td>1 h 30 min</td><td>2 h 00 min</td><td>2 h 30 min</td></tr>
+                <tr><th scope="row">5 miles</th><td>1 h 40 min</td><td>2 h 10 min</td><td>2 h 40 min</td><td>3 h 10 min</td></tr>
+                <tr><th scope="row">8 miles</th><td>2 h 40 min</td><td>3 h 10 min</td><td>3 h 40 min</td><td>4 h 10 min</td></tr>
+                <tr><th scope="row">10 miles</th><td>3 h 20 min</td><td>3 h 50 min</td><td>4 h 20 min</td><td>4 h 50 min</td></tr>
+                <tr><th scope="row">12 miles</th><td>4 h 00 min</td><td>4 h 30 min</td><td>5 h 00 min</td><td>5 h 30 min</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="fine-print" style="margin-top:0.7rem">Moving time at an average pace (3 mph, plus 30 minutes per 1,000 feet climbed), without breaks, rounded to the nearest 5 minutes.</p>
+
+          <h2>What is a turnaround time?</h2>
+          <p>A turnaround time is a clock time you set before the hike at which you head back, whether or not you have reached your goal. It is worked out backwards from the time you must be off the trail, minus the time the return leg takes, minus a safety buffer.</p>
+          <p>Decide it at the trailhead, while you're rested and thinking clearly. Most people who get caught out after dark were "only twenty minutes from the top" when they should have turned around.</p>
+
+          <h2>How accurate is Naismith's rule?</h2>
+          <p>Naismith's rule is a reasonable estimate for a fit adult on a good trail in fair conditions. It does not account for breaks, steep descents, snow, heat, altitude, off-trail travel or a slower member of the group, so treat it as a minimum and add a margin.</p>
+          <ul>
+            <li><strong>Groups move at the pace of the slowest person.</strong> Plan for them, not for you.</li>
+            <li><strong>Steep descents are slow.</strong> Coming down loose or rocky ground can take as long as going up.</li>
+            <li><strong>Altitude and heat cost time.</strong> Above about 8,000 feet, or in high heat, expect to slow down noticeably.</li>
+          </ul>
+
+          <div class="callout">
+            <p><strong>Next step:</strong> once you know when you'll be back, <a href="/tools/trip-plan/">put it in a trip plan</a> and send it to someone you trust. The <a href="/guides/hiking-trip-plan/">trip plan guide</a> explains what to include.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/"><img src="/assets/app-icon-80.png" alt="" width="30" height="30"><span>Don't Go Missing</span></a>
+          <p style="margin-top:0.9rem">The safety net for trips with no signal. Plan once. Stay found.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">Download for iPhone</a></li>
+            <li><a href="/#how">How it works</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Free tools &amp; guides</h4>
+          <ul>
+            <li><a href="/tools/trip-plan/">Trip Plan Generator</a></li>
+            <li><a href="/tools/hiking-time-calculator/">Hiking Time Calculator</a></li>
+            <li><a href="/guides/hiking-trip-plan/">How to leave a trip plan</a></li>
+            <li><a href="/guides/">All guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/contact/">Contact &amp; support</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a></li>
+            <li><a href="mailto:dontgomissingapp@gmail.com">dontgomissingapp@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Don't Go Missing. Not an emergency service. In an emergency, call your local emergency number.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/hike-time.js" defer></script>
+</body>
+</html>
