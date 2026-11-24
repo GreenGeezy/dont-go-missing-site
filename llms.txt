@@ -7,7 +7,7 @@ Key facts:
 - iPhone: iOS 16 or later. App Store: https://apps.apple.com/us/app/dont-go-missing/id6768712827
 - Android: launching on Google Play, package com.dontgomissing.app. Google Play: https://play.google.com/store/apps/details?id=com.dontgomissing.app
 - iPhone price (United States): subscription, $4.99 per week or $49.99 per year, billed by Apple.
-- Android price (United States): subscription, $4.99 per month or $24.99 per year, or a $59.99 one-time Lifetime Pass that does not renew. Billed by Google Play.
+- Android price (United States): subscription, $4.99 per week or $39 per year, billed by Google Play. The yearly plan starts with a 7-day free trial for eligible new subscribers.
 - Cancel anytime in the App Store or Google Play. Deleting the app does not cancel a subscription.
 - Works with no signal: check-in reminders, return-time and overdue alarms, and the GPS trail. These are stored and scheduled on the phone.
 - Needs signal: sending any text message, including the trip plan, a running-late message and an SOS.
@@ -35,4 +35,4 @@ Key facts:
 
 - [Contact and support](https://dontgomissing.com/contact/)
 - [Privacy Policy](https://dontgomissing.com/privacy/): iOS and Android. Data deletion: https://dontgomissing.com/privacy/#data-deletion
-- [Terms of Use](https://dontgomissing.com/terms/): iOS and Android, subscriptions, cancellation, Lifetime Pass, refunds and safety limits. The iOS app is licensed under the Apple Standard EULA.
+- [Terms of Use](https://dontgomissing.com/terms/): iOS and Android, subscriptions, free trial, cancellation, refunds and safety limits. The iOS app is licensed under the Apple Standard EULA.
