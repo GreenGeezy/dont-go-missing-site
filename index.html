@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Don't Go Missing: Hiking Safety App with Trip Plans &amp; Overdue Alarms</title>
-  <meta name="description" content="Build a trip plan in 90 seconds, text it to people you trust, and get overdue alarms that work with no signal. The iPhone safety app for hikers and hunters.">
+  <meta name="description" content="Build a trip plan in 90 seconds, text it to people you trust, and get overdue alarms that work with no signal. For hikers and hunters on iPhone and Android.">
   <link rel="canonical" href="https://dontgomissing.com/">
   <meta name="apple-itunes-app" content="app-id=6768712827">
   <meta property="og:site_name" content="Don't Go Missing">
@@ -61,12 +61,34 @@
         ]
       },
       {
+        "@type": "MobileApplication",
+        "@id": "https://dontgomissing.com/#app-android",
+        "name": "Don't Go Missing",
+        "operatingSystem": "Android",
+        "applicationCategory": "TravelApplication",
+        "description": "An Android safety app for hikers, hunters, anglers and off-grid travelers. Build a trip plan, text it to trusted contacts, get check-in reminders and overdue alarms that work without signal, record a GPS trail on the phone during an active journey, and prepare an SOS message with your coordinates.",
+        "url": "https://dontgomissing.com/",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.dontgomissing.app",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.dontgomissing.app",
+        "publisher": { "@id": "https://dontgomissing.com/#org" },
+        "offers": [
+          { "@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "Monthly subscription" },
+          { "@type": "Offer", "price": "24.99", "priceCurrency": "USD", "description": "Yearly subscription" },
+          { "@type": "Offer", "price": "59.99", "priceCurrency": "USD", "description": "Lifetime Pass, one-time purchase" }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "What is Don't Go Missing?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Don't Go Missing is an iPhone app that makes sure someone knows where you went and when you were due back. You build a trip plan in about 90 seconds, text it to people you trust, and the app reminds you to check in and sounds an alarm on your phone if you are overdue." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Don't Go Missing is a safety app for iPhone and Android that makes sure someone knows where you went and when you were due back. You build a trip plan in about 90 seconds, text it to people you trust, and the app reminds you to check in and sounds an alarm on your phone if you are overdue." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Don't Go Missing available for iPhone and Android?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It is made for both. The iPhone app is on the App Store and needs iOS 16 or later. The Android app is launching on Google Play under the package name com.dontgomissing.app. On both, you build a trip plan, send it to people you trust, and get check-in reminders and overdue alarms on your phone." }
           },
           {
             "@type": "Question",
@@ -76,7 +98,7 @@
           {
             "@type": "Question",
             "name": "Does the app automatically alert my contacts if I am overdue?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. The app has no servers, and iOS does not let apps send text messages silently. Instead, your contacts receive your plan before you leave, including the exact time to start worrying and what to do. If that time passes without hearing from you, they act. Your phone also alerts you so you can check in, extend, or send a running-late text." }
+            "acceptedAnswer": { "@type": "Answer", "text": "No. The app has no servers and does not send text messages silently on iPhone or Android. You review and send each message yourself. Your contacts receive your plan before you leave, including the exact time to start worrying and what to do. If that time passes without hearing from you, they act. Your phone also alerts you so you can check in, extend, or send a running-late text." }
           },
           {
             "@type": "Question",
@@ -91,12 +113,22 @@
           {
             "@type": "Question",
             "name": "Where is my data stored?",
-            "acceptedAnswer": { "@type": "Answer", "text": "On your iPhone. There is no account and no cloud sync. Your trips, contacts and GPS trail stay on the device unless you choose to send a message." }
+            "acceptedAnswer": { "@type": "Answer", "text": "On your iPhone or Android phone. There is no account and no cloud sync. Your trips, contacts and GPS trail stay on the device unless you choose to send a message." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the Android app track my location in the background?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Only during an active journey that you start. The Android app uses a foreground location service to record your GPS trail, shows a persistent notification the whole time, and stops when you end the journey. The trail is stored only on your device." }
           },
           {
             "@type": "Question",
             "name": "How much does Don't Go Missing cost?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Don't Go Missing is a subscription: $4.99 per week or $49.99 per year in the United States. Billing is handled by Apple and you can cancel anytime in your Apple ID subscription settings." }
+            "acceptedAnswer": { "@type": "Answer", "text": "US prices depend on the store. On iPhone, Don't Go Missing is $4.99 per week or $49.99 per year, billed by Apple. On Android, it is $4.99 per month, $24.99 per year, or a one-time $59.99 Lifetime Pass, billed by Google Play. Subscriptions renew automatically until you cancel. The Lifetime Pass does not renew." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I cancel my subscription?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cancel in the store where you subscribed. On iPhone, open Settings, tap your name, then Subscriptions. On Android, open Google Play, tap your profile icon, then Payments & subscriptions, then Subscriptions. You keep access until the end of the period you paid for. Deleting the app does not cancel a subscription." }
           },
           {
             "@type": "Question",
@@ -132,11 +164,12 @@
     <section class="hero">
       <div class="wrap">
         <div>
-          <p class="eyebrow">iPhone safety app for hikers, hunters and anglers</p>
+          <p class="eyebrow">iPhone and Android safety app for hikers, hunters and anglers</p>
           <h1>If you didn't come home tonight, would anyone know <em>where to look?</em></h1>
           <p class="lead">Don't Go Missing builds your trip plan in 90 seconds, texts it to the people you trust, and sounds the alarm on your phone when you're overdue. It works with no signal.</p>
           <div class="cta-row">
             <a class="button button-primary button-large" href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">Download on the App Store</a>
+            <a class="button button-primary button-large" href="https://play.google.com/store/apps/details?id=com.dontgomissing.app">Get it on Google Play</a>
             <a class="button button-secondary button-large" href="/tools/trip-plan/">Try the free trip plan tool</a>
           </div>
           <ul class="trust-line">
@@ -144,7 +177,7 @@
             <li>No ads</li>
             <li>Your location stays on your phone</li>
           </ul>
-          <p class="release-note"><span aria-hidden="true">&#9432;</span><span>Version 1.1, with overdue alarms, the GPS trail and plan texting, is rolling out on the App Store. If your App Store shows version 1.0, those features arrive with the update.</span></p>
+          <p class="release-note"><span aria-hidden="true">&#9432;</span><span>Version 1.1, with overdue alarms, the GPS trail and plan texting, is rolling out on the App Store. If your App Store shows version 1.0, those features arrive with the update. The Android app is launching on Google Play. If the listing does not open for you yet, check back soon.</span></p>
         </div>
 
         <div class="phone-stage" role="img" aria-label="The app during a journey: a countdown showing due back in 3 hours 12 minutes, a check-in button, buttons to add time, and a hold-to-send SOS button">
@@ -373,6 +406,7 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
           <p class="eyebrow">Pricing</p>
           <h2>Less than a freeze-dried dinner. For the whole year.</h2>
         </div>
+        <p class="eyebrow">iPhone, App Store</p>
         <div class="grid grid-2" style="max-width:820px">
           <article class="price-card featured">
             <p class="badge">Best value</p>
@@ -386,7 +420,26 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
             <p>For a single trip or a hunting week.</p>
           </article>
         </div>
-        <p class="fine-print" style="margin-top:1rem">US prices. Subscriptions are billed by Apple, renew automatically, and can be cancelled anytime in your Apple ID settings.</p>
+        <p class="eyebrow" style="margin-top:2rem">Android, Google Play</p>
+        <div class="grid grid-3">
+          <article class="price-card featured">
+            <p class="badge">Best value</p>
+            <h3>Yearly</h3>
+            <p class="price">$24.99<span> / year</span></p>
+            <p>About $2.08 a month. Every trip, all year.</p>
+          </article>
+          <article class="price-card">
+            <h3>Monthly</h3>
+            <p class="price">$4.99<span> / month</span></p>
+            <p>For a season or a single trip.</p>
+          </article>
+          <article class="price-card">
+            <h3>Lifetime Pass</h3>
+            <p class="price">$59.99<span> once</span></p>
+            <p>One payment. No renewal.</p>
+          </article>
+        </div>
+        <p class="fine-print" style="margin-top:1rem">US prices. Subscriptions are billed by Apple or Google Play, renew automatically, and can be cancelled anytime in your Apple Account or Google Play settings. The Lifetime Pass is a one-time purchase that does not renew. See the <a href="/terms/">Terms of Use</a>.</p>
       </div>
     </section>
 
@@ -399,7 +452,11 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
         <div class="faq-list">
           <details open>
             <summary>What is Don't Go Missing?</summary>
-            <p>Don't Go Missing is an iPhone app that makes sure someone knows where you went and when you were due back. You build a trip plan in about 90 seconds, text it to people you trust, and the app reminds you to check in and sounds an alarm on your phone if you are overdue.</p>
+            <p>Don't Go Missing is a safety app for iPhone and Android that makes sure someone knows where you went and when you were due back. You build a trip plan in about 90 seconds, text it to people you trust, and the app reminds you to check in and sounds an alarm on your phone if you are overdue.</p>
+          </details>
+          <details>
+            <summary>Is Don't Go Missing available for iPhone and Android?</summary>
+            <p>It is made for both. The iPhone app is on the App Store and needs iOS 16 or later. The Android app is launching on Google Play under the package name com.dontgomissing.app. On both, you build a trip plan, send it to people you trust, and get check-in reminders and overdue alarms on your phone.</p>
           </details>
           <details>
             <summary>Does Don't Go Missing work without cell service?</summary>
@@ -407,7 +464,7 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
           </details>
           <details>
             <summary>Does the app automatically alert my contacts if I am overdue?</summary>
-            <p>No. The app has no servers, and iOS does not let apps send text messages silently. Instead, your contacts receive your plan before you leave, including the exact time to start worrying and what to do. If that time passes without hearing from you, they act. Your phone also alerts you so you can check in, extend, or send a running-late text.</p>
+            <p>No. The app has no servers and does not send text messages silently on iPhone or Android. You review and send each message yourself. Your contacts receive your plan before you leave, including the exact time to start worrying and what to do. If that time passes without hearing from you, they act. Your phone also alerts you so you can check in, extend, or send a running-late text.</p>
           </details>
           <details>
             <summary>Is Don't Go Missing a replacement for a satellite messenger or PLB?</summary>
@@ -419,11 +476,19 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
           </details>
           <details>
             <summary>Where is my data stored?</summary>
-            <p>On your iPhone. There is no account and no cloud sync. Your trips, contacts and GPS trail stay on the device unless you choose to send a message. Read the <a href="/privacy/">Privacy Policy</a>.</p>
+            <p>On your iPhone or Android phone. There is no account and no cloud sync. Your trips, contacts and GPS trail stay on the device unless you choose to send a message. Read the <a href="/privacy/">Privacy Policy</a>.</p>
+          </details>
+          <details>
+            <summary>Does the Android app track my location in the background?</summary>
+            <p>Only during an active journey that you start. The Android app uses a foreground location service to record your GPS trail, shows a persistent notification the whole time, and stops when you end the journey. The trail is stored only on your device.</p>
           </details>
           <details>
             <summary>How much does Don't Go Missing cost?</summary>
-            <p>Don't Go Missing is a subscription: $4.99 per week or $49.99 per year in the United States. Billing is handled by Apple and you can cancel anytime in your Apple ID subscription settings.</p>
+            <p>US prices depend on the store. On iPhone, Don't Go Missing is $4.99 per week or $49.99 per year, billed by Apple. On Android, it is $4.99 per month, $24.99 per year, or a one-time $59.99 Lifetime Pass, billed by Google Play. Subscriptions renew automatically until you cancel. The Lifetime Pass does not renew.</p>
+          </details>
+          <details>
+            <summary>How do I cancel my subscription?</summary>
+            <p>Cancel in the store where you subscribed. On iPhone, open Settings, tap your name, then Subscriptions. On Android, open Google Play, tap your profile icon, then Payments &amp; subscriptions, then Subscriptions. You keep access until the end of the period you paid for. Deleting the app does not cancel a subscription.</p>
           </details>
           <details>
             <summary>Is Don't Go Missing an emergency service?</summary>
@@ -439,9 +504,10 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
           <h2>Ninety seconds now. So someone knows where to look.</h2>
           <div class="cta-row">
             <a class="button button-primary button-large" href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">Download on the App Store</a>
+            <a class="button button-primary button-large" href="https://play.google.com/store/apps/details?id=com.dontgomissing.app">Get it on Google Play</a>
             <a class="button button-secondary button-large" href="/tools/trip-plan/">Make a free trip plan</a>
           </div>
-          <p class="fine-print">For iPhone. Don't rely on any single app as your only safety measure.</p>
+          <p class="fine-print">For iPhone and Android. Don't rely on any single app as your only safety measure.</p>
         </div>
       </div>
     </section>
@@ -458,6 +524,7 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
           <h4>Product</h4>
           <ul>
             <li><a href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">Download for iPhone</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.dontgomissing.app">Download for Android</a></li>
             <li><a href="/#how">How it works</a></li>
             <li><a href="/#pricing">Pricing</a></li>
             <li><a href="/#faq">FAQ</a></li>
@@ -477,7 +544,8 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
           <ul>
             <li><a href="/contact/">Contact &amp; support</a></li>
             <li><a href="/privacy/">Privacy Policy</a></li>
-            <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a></li>
+            <li><a href="/terms/">Terms of Use</a></li>
+            <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple EULA (iOS)</a></li>
             <li><a href="mailto:dontgomissingapp@gmail.com">dontgomissingapp@gmail.com</a></li>
           </ul>
         </div>
@@ -488,7 +556,8 @@ If you haven't heard from me by 7:30 PM, call or text me first. If you can't rea
 
   <div class="sticky-cta">
     <p>Plan once. Stay found.</p>
-    <a class="button button-primary button-small" href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">Get the app</a>
+    <a class="button button-primary button-small" href="https://apps.apple.com/us/app/dont-go-missing/id6768712827">App Store</a>
+    <a class="button button-primary button-small" href="https://play.google.com/store/apps/details?id=com.dontgomissing.app">Google Play</a>
   </div>
 </body>
 </html>

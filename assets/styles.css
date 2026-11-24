@@ -948,6 +948,7 @@ details a,
 .site-footer a {
   color: var(--muted);
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .site-footer a:hover {
@@ -1446,6 +1447,25 @@ textarea:focus {
   font-size: clamp(1.35rem, 2.6vw, 1.7rem);
 }
 
+.legal-content [id] {
+  scroll-margin-top: 90px;
+}
+
+.legal-content ul {
+  margin: 0 0 1rem;
+  padding-left: 1.3rem;
+}
+
+.legal-content li {
+  margin-bottom: 0.45rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.legal-content .callout h2 {
+  margin-top: 0;
+}
+
 .legal-content article {
   padding: 1.3rem;
   border: 1px solid var(--line);
@@ -1558,7 +1578,7 @@ textarea:focus {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .app-callout {
@@ -1592,6 +1612,16 @@ textarea:focus {
 
   body.has-sticky-cta {
     padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sticky-cta p {
+    display: none;
+  }
+
+  .sticky-cta .button {
+    flex: 1;
   }
 }
 

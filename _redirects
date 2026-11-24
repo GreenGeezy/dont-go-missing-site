@@ -2,8 +2,7 @@
 /support /contact 301
 /support.html /contact 301
 /contact.html /contact 301
-/terms https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ 302
-/terms.html https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ 302
+/terms.html /terms/ 301
 /trip-plan /tools/trip-plan/ 301
 /hiking-trip-plan /guides/hiking-trip-plan/ 301
 /hiking-time-calculator /tools/hiking-time-calculator/ 301

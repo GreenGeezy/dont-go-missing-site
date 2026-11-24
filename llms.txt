@@ -1,16 +1,22 @@
 # Don't Go Missing
 
-> Don't Go Missing is an iPhone safety app for hikers, hunters, anglers and anyone heading out of cell coverage. You build a trip plan in about 90 seconds, text it to people you trust, and the app reminds you to check in and alarms on your phone when you are overdue. Everything runs on the device with no account.
+> Don't Go Missing is a safety app for iPhone and Android, made for hikers, hunters, anglers and anyone heading out of cell coverage. You build a trip plan in about 90 seconds, text it to people you trust, and the app reminds you to check in and alarms on your phone when you are overdue. Everything runs on the device with no account.
 
 Key facts:
 
-- Platform: iPhone (iOS 16 or later). App Store: https://apps.apple.com/us/app/dont-go-missing/id6768712827
-- Price: subscription, $4.99 per week or $49.99 per year in the United States, billed by Apple.
+- iPhone: iOS 16 or later. App Store: https://apps.apple.com/us/app/dont-go-missing/id6768712827
+- Android: launching on Google Play, package com.dontgomissing.app. Google Play: https://play.google.com/store/apps/details?id=com.dontgomissing.app
+- iPhone price (United States): subscription, $4.99 per week or $49.99 per year, billed by Apple.
+- Android price (United States): subscription, $4.99 per month or $24.99 per year, or a $59.99 one-time Lifetime Pass that does not renew. Billed by Google Play.
+- Cancel anytime in the App Store or Google Play. Deleting the app does not cancel a subscription.
 - Works with no signal: check-in reminders, return-time and overdue alarms, and the GPS trail. These are stored and scheduled on the phone.
 - Needs signal: sending any text message, including the trip plan, a running-late message and an SOS.
-- It does not alert contacts automatically. Contacts receive the plan before the trip, with a deadline for calling for help.
+- It does not alert contacts automatically or send texts silently. The user reviews and sends each message. Contacts receive the plan before the trip, with a deadline for calling for help.
 - It is not an emergency service and not a replacement for a satellite messenger or personal locator beacon.
 - Privacy: no account, no ads, no cloud sync. Trips, contacts and the GPS trail stay on the device.
+- Android location: a foreground location service records the GPS trail only during an active journey, with a persistent notification, and stores it on the device.
+- SAR Vehicle/Gear Card (Android): the details search and rescue (SAR) teams ask for, including the vehicle, where it is parked, and what the person is wearing and carrying. The free web trip plan generator includes the same kind of fields.
+- Naismith Turnaround Calculator: estimates hiking time from distance and elevation gain with Naismith's rule (1 hour per 5 km, plus 1 hour per 600 m climbed) and works out when to turn around. Free on the web: https://dontgomissing.com/tools/hiking-time-calculator/
 
 ## Product
 
@@ -18,8 +24,8 @@ Key facts:
 
 ## Free tools
 
-- [Hiking Trip Plan Generator](https://dontgomissing.com/tools/trip-plan/): builds a trip plan to text, email or print. Runs in the browser, nothing is uploaded.
-- [Hiking Time and Turnaround Calculator](https://dontgomissing.com/tools/hiking-time-calculator/): estimates hiking time with Naismith's rule and works out a turnaround time.
+- [Hiking Trip Plan Generator](https://dontgomissing.com/tools/trip-plan/): builds a trip plan to text, email or print, with vehicle and gear details for searchers. Runs in the browser, nothing is uploaded.
+- [Hiking Time and Turnaround Calculator](https://dontgomissing.com/tools/hiking-time-calculator/): the Naismith turnaround calculator. Estimates hiking time with Naismith's rule and works out a turnaround time.
 
 ## Guides
 
@@ -28,4 +34,5 @@ Key facts:
 ## Company
 
 - [Contact and support](https://dontgomissing.com/contact/)
-- [Privacy Policy](https://dontgomissing.com/privacy/)
+- [Privacy Policy](https://dontgomissing.com/privacy/): iOS and Android. Data deletion: https://dontgomissing.com/privacy/#data-deletion
+- [Terms of Use](https://dontgomissing.com/terms/): iOS and Android, subscriptions, cancellation, Lifetime Pass, refunds and safety limits. The iOS app is licensed under the Apple Standard EULA.

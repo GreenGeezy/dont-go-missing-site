@@ -1,6 +1,6 @@
 # Don't Go Missing Website
 
-Static marketing, privacy, and support website for the Don't Go Missing iOS app.
+Static marketing, privacy, and support website for the Don't Go Missing iOS and Android apps.
 
 This repository is only for the public website. It does not contain iOS app source code, Swift files, prototypes, backend code, build tooling, analytics, cookies, or tracking scripts.
 
@@ -12,9 +12,9 @@ This repository is only for the public website. It does not contain iOS app sour
 - `/tools/hiking-time-calculator/` - Hiking Time and Turnaround Calculator (`assets/hike-time.js`)
 - `/guides/` - Guides index
 - `/guides/hiking-trip-plan/` - First guide
-- `/privacy/` - Privacy Policy for App Store Connect
+- `/privacy/` - Privacy Policy for App Store Connect and Google Play Console
 - `/contact/` - Contact and support page for App Store Connect
-- `/terms` - Redirects to Apple's Standard EULA
+- `/terms/` - Terms of Use for iOS and Android. The iOS app license is still Apple's Standard EULA, linked from this page and every footer
 - `/404.html` - Branded not found page
 - `sitemap.xml`, `robots.txt`, `llms.txt` - Crawl and AI-answer-engine files
 - `_redirects`, `_headers` - Netlify redirects and response headers
@@ -31,7 +31,11 @@ All page URLs end with a trailing slash. Netlify redirects the no-slash form, so
 
 ## Before 1.1 ships
 
-The landing page describes app version 1.1. The `.release-note` paragraph in the hero of `index.html` says so. Remove that paragraph once 1.1 is live on the App Store. If the price changes, update the pricing section, the FAQ answer, the JSON-LD offers and `llms.txt`.
+The landing page describes app version 1.1. The `.release-note` paragraph in the hero of `index.html` says so. Remove that paragraph once 1.1 is live on the App Store. If the price changes, update the pricing section, the FAQ answer, the JSON-LD offers, `terms/index.html` and `llms.txt`.
+
+## When the Google Play listing goes live
+
+The site says the Android app is "launching" on Google Play. Once the listing is public, update the `.release-note` in `index.html`, the "iPhone and Android" FAQ answer (visible text and JSON-LD), and the Android line in `llms.txt`.
 
 ## Tech
 
@@ -80,3 +84,10 @@ The public support email is `dontgomissingapp@gmail.com`.
 - Privacy Policy URL: `https://dontgomissing.com/privacy/`
 - Support URL: `https://dontgomissing.com/contact/`
 - EULA: `https://www.apple.com/legal/internet-services/itunes/dev/stdeula/`
+
+## Google Play Console URLs
+
+- Website: `https://dontgomissing.com/`
+- Privacy Policy URL: `https://dontgomissing.com/privacy/`
+- Data deletion URL: `https://dontgomissing.com/privacy/#data-deletion`
+- Terms of Use: `https://dontgomissing.com/terms/`
