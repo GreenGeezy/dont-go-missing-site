@@ -5,7 +5,7 @@
 Key facts:
 
 - iPhone: iOS 16 or later. App Store: https://apps.apple.com/app/apple-store/id6768712827?pt=127859278&ct=website&mt=8
-- Android: launching on Google Play, package com.dontgomissing.app. Google Play: https://play.google.com/store/apps/details?id=com.dontgomissing.app
+- Android: live on Google Play (v1.1.0, Android 8.0+), package com.dontgomissing.app. Google Play: https://play.google.com/store/apps/details?id=com.dontgomissing.app
 - iPhone price (United States): subscription, $4.99 per week or $39.99 per year, billed by Apple. The yearly plan starts with a 3-day free trial for eligible new subscribers.
 - Android price (United States): subscription, $4.99 per week or $39 per year, billed by Google Play. The yearly plan starts with a 7-day free trial for eligible new subscribers.
 - Cancel anytime in the App Store or Google Play. Deleting the app does not cancel a subscription.
@@ -30,6 +30,7 @@ Key facts:
 ## Guides
 
 - [How to Leave a Hiking Trip Plan](https://dontgomissing.com/guides/hiking-trip-plan/): what to include, who to give it to, when they should call for help, and a template.
+- [Solo Hiking Safety Without Cell Service](https://dontgomissing.com/guides/solo-hiking-safety-no-cell-service/): why live location fails offline, how to set a turnaround time, what works with no bars, and an offline solo hiking checklist.
 
 ## Company
 
