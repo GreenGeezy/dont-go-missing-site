@@ -4,9 +4,9 @@
 
 Key facts:
 
-- iPhone: iOS 16 or later. App Store: https://apps.apple.com/us/app/dont-go-missing/id6768712827
+- iPhone: iOS 16 or later. App Store: https://apps.apple.com/app/apple-store/id6768712827?pt=127859278&ct=website&mt=8
 - Android: launching on Google Play, package com.dontgomissing.app. Google Play: https://play.google.com/store/apps/details?id=com.dontgomissing.app
-- iPhone price (United States): subscription, $4.99 per week or $49.99 per year, billed by Apple.
+- iPhone price (United States): subscription, $4.99 per week or $39.99 per year, billed by Apple. The yearly plan starts with a 3-day free trial for eligible new subscribers.
 - Android price (United States): subscription, $4.99 per week or $39 per year, billed by Google Play. The yearly plan starts with a 7-day free trial for eligible new subscribers.
 - Cancel anytime in the App Store or Google Play. Deleting the app does not cancel a subscription.
 - Works with no signal: check-in reminders, return-time and overdue alarms, and the GPS trail. These are stored and scheduled on the phone.
@@ -15,7 +15,7 @@ Key facts:
 - It is not an emergency service and not a replacement for a satellite messenger or personal locator beacon.
 - Privacy: no account, no ads, no cloud sync. Trips, contacts and the GPS trail stay on the device.
 - Android location: a foreground location service records the GPS trail only during an active journey, with a persistent notification, and stores it on the device.
-- SAR Vehicle/Gear Card (Android): the details search and rescue (SAR) teams ask for, including the vehicle, where it is parked, and what the person is wearing and carrying. The free web trip plan generator includes the same kind of fields.
+- SAR Vehicle/Gear Card (iPhone and Android): the details search and rescue (SAR) teams ask for, including the vehicle, where it is parked, and what the person is wearing and carrying. The free web trip plan generator includes the same kind of fields.
 - Naismith Turnaround Calculator: estimates hiking time from distance and elevation gain with Naismith's rule (1 hour per 5 km, plus 1 hour per 600 m climbed) and works out when to turn around. Free on the web: https://dontgomissing.com/tools/hiking-time-calculator/
 
 ## Product
