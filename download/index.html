@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Don't Go Missing for iPhone or Android</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Download Don't Go Missing, the hiking safety app with trip plans and overdue alarms that work with no signal. Free trial on the App Store and Google Play.">
+  <link rel="canonical" href="https://dontgomissing.com/download/">
+  <meta name="theme-color" content="#07110e">
+  <script>
+  (function () {
+    'use strict';
+    var src = 'website';
+    var match = /[?&]src=([^&#]*)/.exec(window.location.search);
+    if (match) {
+      var raw = '';
+      try { raw = decodeURIComponent(match[1].replace(/\+/g, ' ')); } catch (e) { raw = ''; }
+      var clean = raw.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 40);
+      if (/^[a-zA-Z0-9_-]{1,40}$/.test(clean)) src = clean;
+    }
+    var iosUrl = 'https://apps.apple.com/app/apple-store/id6768712827?pt=127859278&ct=' + src + '&mt=8';
+    var androidUrl = 'https://play.google.com/store/apps/details?id=com.dontgomissing.app&referrer=utm_source%3D' + src + '%26utm_medium%3Dsmartlink';
+    window.DGM_DOWNLOAD = { src: src, ios: iosUrl, android: androidUrl };
+
+    var ua = navigator.userAgent || '';
+    var isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+    var isAndroid = /Android/i.test(ua);
+    var stay = /[?&]noredirect=1(&|$)/.test(window.location.search);
+    if (stay) return;
+    if (isIOS) {
+      document.documentElement.className += ' is-redirecting';
+      window.location.replace(iosUrl);
+    } else if (isAndroid) {
+      document.documentElement.className += ' is-redirecting';
+      window.location.replace(androidUrl);
+    }
+  })();
+  </script>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/app-icon-180.png">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Don't Go Missing home">
+        <img src="/assets/app-icon-80.png" alt="" width="30" height="30">
+        <span>Don't Go Missing</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#how">How it works</a>
+        <a href="/tools/">Free tools</a>
+        <a href="/guides/">Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="download-page">
+    <div class="wrap">
+      <div class="download-card">
+        <img src="/assets/app-icon-180.png" alt="Don't Go Missing app icon" width="84" height="84">
+        <p class="eyebrow">iPhone and Android safety app</p>
+        <h1>Get Don't Go Missing on Your Phone</h1>
+        <p class="lead">Build a trip plan in 90 seconds, text it to the people you trust, and get overdue alarms and a GPS trail that work with no signal.</p>
+        <p class="download-redirecting" id="dl-redirecting" hidden>Opening your app store&hellip; If nothing happens, tap your store below.</p>
+
+        <div class="download-stores">
+          <a class="button button-primary button-large" id="dl-ios" href="https://apps.apple.com/app/apple-store/id6768712827?pt=127859278&amp;ct=website&amp;mt=8">
+            <span>App Store</span>
+            <small>Start 3-day free trial</small>
+          </a>
+          <a class="button button-primary button-large" id="dl-android" href="https://play.google.com/store/apps/details?id=com.dontgomissing.app&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dsmartlink">
+            <span>Google Play</span>
+            <small>Start 7-day free trial</small>
+          </a>
+        </div>
+        <ul class="trust-line" style="justify-content:center">
+          <li>No account</li>
+          <li>No ads</li>
+          <li>Location stays on your phone</li>
+        </ul>
+
+        <p class="eyebrow" style="margin-top:2rem">On a computer? Start free in your browser</p>
+        <div class="download-free">
+          <a class="button button-secondary" href="/tools/risk-map/">Check a park's missing-persons risk</a>
+          <a class="button button-secondary" href="/tools/trip-plan/">Make a free trip plan</a>
+        </div>
+
+        <p class="fine-print">US prices. iPhone: $4.99/week or $39.99/year with a 3-day free trial on the yearly plan. Android: $4.99/week or $39/year with a 7-day free trial on the yearly plan. Trials are for eligible new subscribers and renew automatically unless cancelled before they end. See the <a href="/terms/">Terms of Use</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-bottom">&copy; 2026 Don't Go Missing. Not an emergency service. In an emergency, call your local emergency number. <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/contact/">Contact</a></p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var d = window.DGM_DOWNLOAD;
+    if (!d) return;
+    document.getElementById('dl-ios').href = d.ios;
+    document.getElementById('dl-android').href = d.android;
+    if (/\bis-redirecting\b/.test(document.documentElement.className)) {
+      document.getElementById('dl-redirecting').hidden = false;
+    }
+  })();
+  </script>
+</body>
+</html>

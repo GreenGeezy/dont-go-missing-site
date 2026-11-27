@@ -1,7 +1,47 @@
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+
+# Clickjacking protection on every page except the embeddable risk map (/tools/risk-map/?embed=1).
+# Listed per path because Netlify combines headers from overlapping rules.
+/
   X-Frame-Options: SAMEORIGIN
+
+/index.html
+  X-Frame-Options: SAMEORIGIN
+
+/404.html
+  X-Frame-Options: SAMEORIGIN
+
+/download/*
+  X-Frame-Options: SAMEORIGIN
+
+/contact/*
+  X-Frame-Options: SAMEORIGIN
+
+/privacy/*
+  X-Frame-Options: SAMEORIGIN
+
+/terms/*
+  X-Frame-Options: SAMEORIGIN
+
+/guides/*
+  X-Frame-Options: SAMEORIGIN
+
+/tools/
+  X-Frame-Options: SAMEORIGIN
+
+/tools/index.html
+  X-Frame-Options: SAMEORIGIN
+
+/tools/trip-plan/*
+  X-Frame-Options: SAMEORIGIN
+
+/tools/hiking-time-calculator/*
+  X-Frame-Options: SAMEORIGIN
+
+/tools/risk-map/*
+  Content-Security-Policy: frame-ancestors *
 
 /assets/*
   Cache-Control: public, max-age=604800

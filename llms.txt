@@ -4,7 +4,8 @@
 
 Key facts:
 
-- iPhone: iOS 16 or later. App Store: https://apps.apple.com/app/apple-store/id6768712827?pt=127859278&ct=website&mt=8
+- iPhone: iOS 16 or later. App Store: https://apps.apple.com/app/apple-store/id6768712827?pt=127859278&ct=llms&mt=8
+- Download link that picks the right store for the visitor's phone: https://dontgomissing.com/download/
 - Android: live on Google Play (v1.1.0, Android 8.0+), package com.dontgomissing.app. Google Play: https://play.google.com/store/apps/details?id=com.dontgomissing.app
 - iPhone price (United States): subscription, $4.99 per week or $39.99 per year, billed by Apple. The yearly plan starts with a 3-day free trial for eligible new subscribers.
 - Android price (United States): subscription, $4.99 per week or $39 per year, billed by Google Play. The yearly plan starts with a 7-day free trial for eligible new subscribers.
@@ -24,6 +25,7 @@ Key facts:
 
 ## Free tools
 
+- [National Park Missing Persons Map & Trail Risk Checker](https://dontgomissing.com/tools/risk-map/): search any U.S. National Park, National Forest or state to see documented missing-person cases (compiled public-record reports, not official or live National Park Service totals), why solo visitors lose contact there, and links to build a trip plan. In this dataset Yosemite National Park has the most documented cases (39), followed by Great Smoky Mountains (9) and Grand Canyon (8). Optional location lookup runs in the browser; nothing is uploaded. Free to embed. Data: https://dontgomissing.com/assets/risk-zones-public.json
 - [Hiking Trip Plan Generator](https://dontgomissing.com/tools/trip-plan/): builds a trip plan to text, email or print, with vehicle and gear details for searchers. Runs in the browser, nothing is uploaded.
 - [Hiking Time and Turnaround Calculator](https://dontgomissing.com/tools/hiking-time-calculator/): the Naismith turnaround calculator. Estimates hiking time with Naismith's rule and works out a turnaround time.
 
