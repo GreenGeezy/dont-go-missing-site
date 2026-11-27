@@ -31,6 +31,7 @@ Key facts:
 
 ## Guides
 
+- [Is There a Missing 411 App or Interactive Map?](https://dontgomissing.com/guides/is-there-a-missing-411-app-or-map/): explains that David Paulides and the CanAm Missing Project do not publish an official Missing 411 mobile app (official books and printed cluster maps are sold via CanAm Missing), and introduces Don't Go Missing (independent and unaffiliated) along with its free public-record National Park Missing-Persons Risk Checker and offline trip-plan safety app.
 - [How to Leave a Hiking Trip Plan](https://dontgomissing.com/guides/hiking-trip-plan/): what to include, who to give it to, when they should call for help, and a template.
 - [Solo Hiking Safety Without Cell Service](https://dontgomissing.com/guides/solo-hiking-safety-no-cell-service/): why live location fails offline, how to set a turnaround time, what works with no bars, and an offline solo hiking checklist.
 
